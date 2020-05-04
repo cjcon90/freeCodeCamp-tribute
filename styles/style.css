@@ -1,135 +1,80 @@
-
-
+/*Base Formatting*/
 
 #main {
-    margin: auto;
     background-color: rgb(122, 20, 20);
+    margin: 0;
 }
 
 header {
-    margin: auto;
-    margin-top: 20px;
     background-color: rgb(240, 229, 229);
-    margin-top: -50px;
-    border: solid black 1px;
-    border-radius: 2px;
 }
 
+
 #title {
-    position: relative;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 6rem;
-    font-weight: 200;
-    margin-bottom: -5px;
     color: rgb(158, 11, 11);
 }
 
 #subtitle {
     text-align: center;
     font-family: 'Charm', cursive;
-    font-size: 2rem;
-    font-weight: 300;
-    margin-top: 10px;
     color: rgb(75, 31, 31);
 }
 
 #img-div {
-    position: relative;
-    margin: auto;
-    max-width: 1100px;
-    display: block;
-    margin: auto;
     text-align: center;
+    margin: 0 -50px 0 -50px;
+    padding: 0;
 }
 
 #image {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-    margin: 15px 0 10px 0;
     border: solid black 2px;
-    border-radius: 1rem;
-}
-
-figcaption {
-    padding: 10px;
-    text-align: center;
 }
 
 #img-caption {
     font-family: Times, 'Times New Roman', serif;
-    font-size: 1.2rem;
-    font-weight: 600;
     color: rgb(231, 216, 216);
-    margin: -20px 0 20px 0;
+
 }
 
 #tribute-info {
-    position: relative;
-    margin: auto;
-    min-width: 50vw;
-    max-width: 1000px;
-    border: solid 2px black;
-    border-radius: 10px;
     background-color: rgb(231, 216, 216);
     text-align: justify;
     font-family: 'Merriweather', serif;
-    font-size: 1.1rem;
-    font-weight: 550;
-    line-height: 1.5rem;
-    padding: 10px 30px 10px 30px;
 }
+
 
 #statue {
     filter: grayscale(95%) sepia(25%);
-    width: 60%;
-    display: block;
-    margin: auto;
 }
 
+li {
+    line-height: 2rem;
+}
 
 .art-head {
-    position: relative;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.5rem;
     font-weight: bold;
-    color: rgb(122, 20, 20);
+    color: rgb(158, 11, 11);
 }
 
 hr{
-    margin: "-20px 0 20px 0";
     color: rgb(87, 0, 0);
 }
 
-br {
-    display: block;
-    margin: 10px 0;
- }
-
-
-
  #art-wm {
-    position: relative;
     clear: both;
  }
 
  #wm {
-     width: 23%;
-     position: relative;
-     float: right;
-     margin: 0 0 10px 20px;
-     border: dotted black 1.5px;
+     text-align: center;
      font-style: italic;
  }
 
  #link {
     text-align: center; 
-    margin: 25px 0 10px 0;
  }
 
 a {
@@ -149,14 +94,239 @@ a:hover {
 }
 
 footer {
-    position: relative;
-    margin: auto;
-    margin-top: 20px;
-    min-width: 50vw;
-    max-width: 1000px;
-    border: solid 2px black;
-    border-radius: 10px;
     background-color: rgb(231, 216, 216);
     text-align: center;
-    padding: 10px 30px 10px 30px;
+    font-family: 'Merriweather', serif;
 }
+
+
+
+
+
+/*Mobile Sizing*/
+
+@media (max-width: 1024px) {
+
+    #title {
+        font-size: 10vw;
+        padding-top: 15px;
+    }
+    
+    #subtitle {
+        font-size: 5vw;
+        margin-top: -20px;
+        padding-bottom: 20px;
+    }
+    
+    #img-div {
+        text-align: center;
+        margin: 0 -50px 0 -50px;
+    }
+
+    #img-caption {
+        margin: 0 30px 0 30px;
+    }
+
+    #image {
+        max-width: 96%;
+        border: solid black 2px;
+    }
+
+    #tribute-info {
+        font-size: 1rem;
+        line-height: 2.3rem;
+        padding: 5px 15px 10px 15px;
+    }
+
+    p {
+        padding: 6px 0 6px 0;
+    }
+
+    .art-head {
+        font-size: 8vw;
+        line-height: 2.5rem;
+    }
+
+    #wm {
+        margin: 0 -20px 10px -20px;
+        padding: 20px 
+
+    }
+    
+    li {
+        margin: 10px 0 10px -30px;
+        line-height: 2.2rem;
+    }
+
+    #statue-div {
+        margin: 0 -50px 0 -50px;
+    }
+
+    #statue {
+        width: 100%;
+    }
+
+    figcaption {
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 0 30px 0 30px;
+        line-height: 1rem;
+    }
+
+    #link {
+        background-color: rgb(247, 233, 233);
+        margin: 20px 20px 0 20px;
+        border: maroon solid 2px;
+    }
+    
+    footer {
+        text-align: center;
+        border-top: dotted black 2px;
+        padding: 15px 5px 20px 5px;
+        font-size: 0.8rem;
+        font-weight: bolder;
+
+    }
+
+}
+
+
+
+
+
+/*Desktop Sizing*/
+
+@media (min-width: 1024px) {
+
+
+    #main {
+        margin: auto;
+    }
+
+    header {
+        margin: auto;
+        margin-top: 20px;
+        margin-top: -50px;
+        border: solid black 1px;
+        border-radius: 2px;
+    }
+
+
+    #title {
+        font-size: 6rem;
+        font-weight: 200;
+        margin-bottom: -5px;
+    }
+
+    #subtitle {
+        text-align: center;
+        font-family: 'Charm', cursive;
+        font-size: 2rem;
+        font-weight: 300;
+        margin-top: 10px;
+        color: rgb(75, 31, 31);
+    }
+    
+    #img-div {
+        margin: auto;
+        max-width: 1100px;
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    
+    #image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin: 15px 0 10px 0;
+        border: solid black 2px;
+        border-radius: 1rem;
+    }
+    
+    figcaption {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    #img-caption {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: -20px 0 20px 0;
+    }
+
+    #tribute-info {
+        margin: auto;
+        min-width: 50vw;
+        max-width: 1000px;
+        border: solid 2px black;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        font-weight: 550;
+        line-height: 2.5rem;
+        padding: 10px 30px 10px 30px;
+    }
+
+    p {
+        padding: 6px 0 6px 0;
+    }
+
+    .art-head {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: rgb(122, 20, 20);
+    }
+
+    hr{
+        margin: "-20px 0 20px 0";
+    }
+
+    #art-wm {
+        position: relative;
+        clear: both;
+    }
+    
+    #wm {
+        width: 23%;
+        position: relative;
+        float: right;
+        margin: 20px 0 50px 20px;
+        border: dotted black 1.5px;
+        font-style: italic;
+     }
+
+    li {
+        line-height: 3rem;
+    }
+    
+    #statue {
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+    
+     #link {
+        margin: 25px 0 10px 0;
+     }
+    
+    footer {
+        position: relative;
+        margin: auto;
+        margin-top: 20px;
+        min-width: 50vw;
+        max-width: 1000px;
+        border: solid 2px black;
+        border-radius: 10px;
+        background-color: rgb(231, 216, 216);
+        text-align: center;
+        padding: 10px 30px 10px 30px;
+    }
+    
+
+
+
+
+}
+
+
