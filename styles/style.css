@@ -63,7 +63,7 @@ li {
 .art-head {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bold;
+  font-weight: lighter;
   color: rgb(158, 11, 11);
 }
 
@@ -146,6 +146,7 @@ footer {
   .art-head {
     font-size: 8vw;
     line-height: 2.5rem;
+   
   }
 
   #wm {
@@ -265,9 +266,8 @@ footer {
   }
 
   .art-head {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: rgb(122, 20, 20);
+    font-size: 3rem;
+    color: rgb(158, 11, 11);
   }
 
   hr {
