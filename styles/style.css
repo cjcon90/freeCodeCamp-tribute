@@ -256,7 +256,6 @@ footer {
     border: solid 2px black;
     border-radius: 10px;
     font-size: 1.1rem;
-    font-weight: 550;
     line-height: 2.5rem;
     padding: 10px 30px 10px 30px;
   }
@@ -268,10 +267,6 @@ footer {
   .art-head {
     font-size: 3rem;
     color: rgb(158, 11, 11);
-  }
-
-  hr {
-    margin: "-20px 0 20px 0";
   }
 
   #art-wm {
